@@ -25,7 +25,7 @@ git clone git@github.com:DipendraDLS/LLM-Sycophancy-Master-Project.git
 git clone https://github.com/DipendraDLS/LLM-Sycophancy-Master-Project.git
 
 # Navigate into the project directory
-cd evaluating-sycophancy
+cd LLM-Sycophancy-Master-Project
 
 # Fetch remote branches and switch to main
 git fetch --all --prune
