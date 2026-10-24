@@ -1,0 +1,20 @@
+sbatch run_dashboard.sh
+
+
+
+
+
+~/.bashrc
+alias tunnel="ssh -N -f -L 9900:a0221.nhr.fau.de:8501 v132ca28@alex.nhr.fau.de"
+
+
+# 2. Dynamic rule that automatically routes through the login node to ANY compute node
+Host a*
+    User v132ca28
+    ProxyJump alex
+
+
+
+kill -9 $(lsof -t -i:8501)
+
+sinfo -p a40,rtx3080,a100

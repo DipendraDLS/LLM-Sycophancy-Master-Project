@@ -1,0 +1,357 @@
+/* Main app padding */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1400px;
+}
+
+/* Headings */
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    margin-top: 1rem;
+}
+
+/* Metric cards */
+[data-testid="stMetric"] {
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+/* Buttons */
+.stButton button {
+    width: 100%;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Code / terminal blocks */
+code {
+    font-size: 0.9rem;
+}
+
+pre {
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* Tables */
+[data-testid="stDataFrame"] {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Custom Modern Card Design */
+.custom-card {
+    background: linear-gradient(135deg, #1e1e2f 0%, #12121c 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    border-color: #00a2ff;
+    /* Blue accent */
+    box-shadow: 0 8px 30px rgba(0, 162, 255, 0.15);
+}
+
+.card-title {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.card-subtitle {
+    color: #a0a0b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Card title link navigation styling */
+.card-title a.card-title-link {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.card-title a.card-title-link:hover {
+    color: #00a2ff !important;
+    text-shadow: 0 0 8px rgba(0, 162, 255, 0.4);
+}
+
+/* Target the "Launch Experiment" button directly in Home Page */
+.st-key-main_launch_trigger button {
+    background: linear-gradient(135deg, #276749 0%, #2f855a 100%) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+    padding: 15px 0 15px 45px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 15px rgba(47, 133, 90, 0.3) !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1.5px !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.71-2.13.09-2.91a2.18 2.18 0 0 0-3.09-.09zm9.29-9.29L19.34 3.75a2 2 0 0 1 2.83 2.83l-3.46 3.46M9 19c1.23-1.23 2.85-2.28 4.38-3.12l6.19-3.71c.7-.42.81-1.39.23-1.97L15.8 6.2c-.58-.58-1.55-.47-1.97.23l-3.71 6.19C9.28 14.15 8.23 15.77 7 17l-1 1'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: 18px center !important;
+    background-size: 20px !important;
+    text-align: left !important;
+}
+
+.st-key-main_launch_trigger button:hover {
+    background: linear-gradient(135deg, #2f855a 0%, #38a169 100%) !important;
+    box-shadow: 0 6px 25px rgba(47, 133, 90, 0.5) !important;
+    transform: translateY(-2px) scale(1.01) !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.71-2.13.09-2.91a2.18 2.18 0 0 0-3.09-.09zm9.29-9.29L19.34 3.75a2 2 0 0 1 2.83 2.83l-3.46 3.46M9 19c1.23-1.23 2.85-2.28 4.38-3.12l6.19-3.71c.7-.42.81-1.39.23-1.97L15.8 6.2c-.58-.58-1.55-.47-1.97.23l-3.71 6.19C9.28 14.15 8.23 15.77 7 17l-1 1'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: 18px center !important;
+}
+
+.st-key-main_launch_trigger button:active {
+    transform: translateY(1px) scale(0.99) !important;
+    box-shadow: 0 2px 10px rgba(0, 162, 255, 0.2) !important;
+}
+
+
+
+/* Base styling for all sidebar navigation links */
+div[class*="st-key-nav_"] button {
+    justify-content: flex-start !important;
+    background-color: transparent !important;
+    color: #b0b0cb !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 12px 16px 12px 48px !important;
+    /* Extra left padding for icon */
+    font-size: 1.1rem !important;
+    height: 52px !important;
+    text-align: left !important;
+    transition: all 0.2s ease-in-out !important;
+    background-repeat: no-repeat !important;
+    background-position: 14px center !important;
+    background-size: 22px !important;
+}
+
+/* Individual Professional Icons (Monochrome SVGs) */
+.st-key-nav_Home button {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23b0b0cb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'%3E%3C/path%3E%3Cpolyline points='9 22 9 12 15 12 15 22'%3E%3C/polyline%3E%3C/svg%3E") !important;
+}
+
+.st-key-nav_Database button {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23b0b0cb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cellipse cx='12' cy='5' rx='9' ry='3'%3E%3C/ellipse%3E%3Cpath d='M21 12c0 1.66-4 3-9 3s-9-1.34-9-3'%3E%3C/path%3E%3Cpath d='M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5'%3E%3C/path%3E%3C/svg%3E") !important;
+}
+
+.st-key-nav_LLMs button {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23b0b0cb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='4' width='16' height='16' rx='2' ry='2'%3E%3C/rect%3E%3Crect x='9' y='9' width='6' height='6'%3E%3C/rect%3E%3Cline x1='9' y1='1' x2='9' y2='4'%3E%3C/line%3E%3Cline x1='15' y1='1' x2='15' y2='4'%3E%3C/line%3E%3Cline x1='9' y1='20' x2='9' y2='23'%3E%3C/line%3E%3Cline x1='15' y1='20' x2='15' y2='23'%3E%3C/line%3E%3Cline x1='20' y1='9' x2='23' y2='9'%3E%3C/line%3E%3Cline x1='20' y1='15' x2='23' y2='15'%3E%3C/line%3E%3Cline x1='1' y1='9' x2='4' y2='9'%3E%3C/line%3E%3Cline x1='1' y1='15' x2='4' y2='15'%3E%3C/line%3E%3C/svg%3E") !important;
+}
+
+.st-key-nav_Persona button {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23b0b0cb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2'%3E%3C/path%3E%3Ccircle cx='12' cy='7' r='4'%3E%3C/circle%3E%3C/svg%3E") !important;
+}
+
+.st-key-nav_Pushback button {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23b0b0cb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='1 4 1 10 7 10'%3E%3C/polyline%3E%3Cpolyline points='23 20 23 14 17 14'%3E%3C/polyline%3E%3Cpath d='M20.49 9A9 9 0 0 0 5.64 5.64L1 10m22 4l-4.64 4.36A9 9 0 0 1 3.51 15'%3E%3C/path%3E%3C/svg%3E") !important;
+}
+
+.st-key-nav_Analyse button {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23b0b0cb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='20' x2='18' y2='10'%3E%3C/line%3E%3Cline x1='12' y1='20' x2='12' y2='4'%3E%3C/line%3E%3Cline x1='6' y1='20' x2='6' y2='14'%3E%3C/line%3E%3C/svg%3E") !important;
+}
+
+
+/* Hover/Active states change icon color too */
+div[class*="st-key-nav_"] button:hover {
+    background-color: rgba(255, 255, 255, 0.04) !important;
+    color: #ffffff !important;
+}
+
+/* Eliminate focus outlines that look messy on click */
+div[class*="st-key-nav_"] button:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+
+/* 1. Collapse the empty default Streamlit header block */
+[data-testid="stSidebarHeader"] {
+    min-height: 0px !important;
+    height: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+/* 2. Push the user content container tightly to the top */
+[data-testid="stSidebarContent"] {
+    padding-top: 1rem !important;
+    /* Adjust this value if you want it even higher or lower */
+}
+
+
+
+/* Force all buttons inside the sidebar to align to the left and have consistent size */
+[data-testid="stSidebar"] button {
+    justify-content: flex-start !important;
+    text-align: left !important;
+    padding-left: 1.25rem !important;
+    width: 100% !important;
+    height: 52px !important;
+}
+
+/* Ensure the text and icons inside the button layout don't try to auto-center */
+[data-testid="stSidebar"] button div,
+[data-testid="stSidebar"] button p {
+    text-align: left !important;
+    justify-content: flex-start !important;
+    font-size: 1.1rem !important;
+    font-weight: 500 !important;
+    margin-left: 0px !important;
+    /* Reset margin since we use padding */
+}
+
+.st-emotion-cache-4cktc5 h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    padding: 0px 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+
+[data-testid="stSidebar"] .stMarkdown p,
+[data-testid="stSidebar"] .stMarkdown li {
+    white-space: normal !important;
+    word-break: break-word !important;
+}
+
+/* Ensure code boxes don't overflow horizontally */
+[data-testid="stSidebar"] code {
+    white-space: pre-wrap !important;
+    word-break: break-all !important;
+    font-size: 0.85rem !important;
+}
+
+/* Primary Pipeline Action Buttons (Initialize / Start) */
+div[class*="st-key-btn_init"] button,
+div[class*="st-key-btn_start"] button,
+div[class*="st-key-btn_acquire"] button,
+div[class*="st-key-btn_initialize"] button,
+div[class*="st-key-active_pipeline_btn"] button {
+    background-color: #276749 !important; /* Professional Dark Green */
+    color: #f0fff4 !important;
+    font-weight: 600 !important;
+    border: 1px solid #2f855a !important;
+    padding-left: 38px !important;
+    background-repeat: no-repeat !important;
+    background-position: 12px center !important;
+    background-size: 18px !important;
+    text-align: left !important;
+}
+
+div[class*="st-key-btn_init"] button,
+div[class*="st-key-btn_start"] button,
+div[class*="st-key-btn_initialize"] button,
+div[class*="st-key-active_pipeline_btn"] button {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/%3E%3C/svg%3E") !important;
+}
+
+div[class*="st-key-btn_acquire"] button {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z'%3E%3C/path%3E%3Cpolyline points='3.29 7 12 12 20.71 7'%3E%3C/polyline%3E%3Cline x1='12' y1='22' x2='12' y2='12'%3E%3C/line%3E%3C/svg%3E") !important;
+}
+
+div[class*="st-key-btn_init"] button:hover,
+div[class*="st-key-btn_start"] button:hover,
+div[class*="st-key-btn_acquire"] button:hover,
+div[class*="st-key-btn_initialize"] button:hover,
+div[class*="st-key-active_pipeline_btn"] button:hover {
+    background-color: #2f855a !important;
+    box-shadow: 0 0 15px rgba(47, 133, 90, 0.2) !important;
+}
+
+/* Infrastructure Provisioning & Main Launch (Blue) */
+div[class*="st-key-btn_provision"] button,
+div[class*="st-key-main_launch_trigger"] button {
+    background-color: #1a4d7c !important; /* Professional Muted Blue */
+    color: #f0f7ff !important;
+    font-weight: 600 !important;
+    border: 1px solid #2b6cb0 !important;
+    padding-left: 38px !important;
+    background-repeat: no-repeat !important;
+    background-position: 12px center !important;
+    background-size: 18px !important;
+    text-align: left !important;
+}
+
+div[class*="st-key-btn_provision"] button {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect width='20' height='8' x='2' y='2' rx='2' ry='2'%3E%3C/rect%3E%3Crect width='20' height='8' x='2' y='14' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='6' x2='6.01' y1='6' y2='6'%3E%3C/line%3E%3Cline x1='6' x2='6.01' y1='18' y2='18'%3E%3C/line%3E%3C/svg%3E") !important;
+}
+
+div[class*="st-key-main_launch_trigger"] button {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z'%3E%3C/path%3E%3Cpath d='m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z'%3E%3C/path%3E%3Cpath d='M9 12H4s.55-3.03 2-5c1.62-2.2 5-3 5-3'%3E%3C/path%3E%3Cpath d='M12 15v5s3.03-.55 5-2c2.2-1.62 3-5 3-5'%3E%3C/path%3E%3C/svg%3E") !important;
+}
+
+div[class*="st-key-btn_provision"] button:hover,
+div[class*="st-key-main_launch_trigger"] button:hover {
+    background-color: #2b6cb0 !important;
+    box-shadow: 0 0 15px rgba(43, 108, 176, 0.3) !important;
+}
+
+/* Strategic Stop/Reset Actions (Stop / Abort / Purge) */
+div[class*="st-key-btn_stop"] button,
+div[class*="st-key-btn_stop_sidebar"] button,
+div[class*="st-key-btn_stop_final"] button,
+div[class*="st-key-master_cancel_btn"] button {
+    background-color: #8b2d2d !important; 
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    border: 1px solid #a53d3d !important;
+    padding-left: 38px !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cline x1='15' y1='9' x2='9' y2='15'/%3E%3Cline x1='9' y1='9' x2='15' y2='15'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: 12px center !important;
+    background-size: 18px !important;
+    text-align: left !important;
+}
+
+div[class*="st-key-btn_stop"] button:hover,
+div[class*="st-key-master_cancel_btn"] button:hover {
+    background-color: #a53d3d !important;
+    box-shadow: 0 0 15px rgba(165, 61, 61, 0.3) !important;
+}
+
+/* Global Alert Component Overrides for "Eye Suitability" */
+[data-testid="stNotification"] {
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* st.error override */
+div[data-testid="stNotification"][data-status="error"] {
+    background-color: rgba(139, 45, 45, 0.2) !important;
+    color: #ffb3b3 !important;
+    border-left: 5px solid #8b2d2d !important;
+}
+
+/* st.warning override */
+div[data-testid="stNotification"][data-status="warning"] {
+    background-color: rgba(133, 94, 33, 0.2) !important;
+    color: #ffe4b3 !important;
+    border-left: 5px solid #855e21 !important;
+}
+
+/* st.success override */
+div[data-testid="stNotification"][data-status="success"] {
+    background-color: rgba(39, 103, 73, 0.2) !important;
+    color: #b3ffcc !important;
+    border-left: 5px solid #276749 !important;
+}
